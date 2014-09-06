@@ -1,4 +1,4 @@
-package edu.tutor.toast;
+package edu.tutor.toast.device.airbag;
 
 import java.util.ArrayList;
 import java.util.List;

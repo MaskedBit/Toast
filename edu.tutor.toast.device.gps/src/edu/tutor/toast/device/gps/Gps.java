@@ -1,4 +1,4 @@
-package edu.tutor.toast;
+package edu.tutor.toast.device.gps;
 
 public class Gps
 {

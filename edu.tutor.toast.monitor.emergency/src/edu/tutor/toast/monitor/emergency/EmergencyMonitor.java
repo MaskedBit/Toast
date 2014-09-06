@@ -1,4 +1,8 @@
-package edu.tutor.toast;
+package edu.tutor.toast.monitor.emergency;
+
+import edu.tutor.toast.device.airbag.Airbag;
+import edu.tutor.toast.device.airbag.AirbagListener;
+import edu.tutor.toast.device.gps.Gps;
 
 public class EmergencyMonitor implements AirbagListener
 {

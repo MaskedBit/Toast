@@ -1,4 +1,4 @@
-package edu.tutor.toast;
+package edu.tutor.toast.device.airbag;
 
 /**
  * Interface for classes wishing to be notified of
