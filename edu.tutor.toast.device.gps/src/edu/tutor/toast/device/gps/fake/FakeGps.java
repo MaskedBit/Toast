@@ -1,4 +1,6 @@
-package edu.tutor.toast.device.gps;
+package edu.tutor.toast.device.gps.fake;
+
+import edu.tutor.toast.device.gps.Gps;
 
 public class FakeGps implements Gps
 {

@@ -1,5 +1,7 @@
 package edu.tutor.toast.monitor.emergency;
 
+import java.util.Date;
+
 import edu.tutor.toast.device.airbag.AirbagListener;
 import edu.tutor.toast.device.airbag.Airbag;
 import edu.tutor.toast.device.gps.Gps;
@@ -11,7 +13,8 @@ public class EmergencyMonitor implements AirbagListener
 
 	public void deployed()
 	{
-		System.out.println("Emergency occurred at lat=" + gps.getLatitude()
+		System.out.println((new Date()).toString() + ":  Emergency occurred at lat="
+				+ gps.getLatitude()
 				+ " lon=" + gps.getLongitude()
 				+ " heading=" + gps.getHeading()
 				+ " altitude=" + gps.getAltitude()

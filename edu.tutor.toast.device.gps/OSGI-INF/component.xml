@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="edu.tutor.toast.device.gps">
+   <implementation class="edu.tutor.toast.device.gps.fake.FakeGps"/>
+   <service>
+      <provide interface="edu.tutor.toast.device.gps.Gps"/>
+   </service>
+</scr:component>

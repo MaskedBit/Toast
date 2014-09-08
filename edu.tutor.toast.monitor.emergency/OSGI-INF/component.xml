@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component
+  xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0"
+  activate="startup"
+  deactivate="shutdown"
+  name="edu.tutor.toast.monitor.emergency">
+   <implementation class="edu.tutor.toast.monitor.emergency.EmergencyMonitor"/>
+   <reference
+     bind="setAirbag"
+     cardinality="1..1"
+     interface="edu.tutor.toast.device.airbag.Airbag"
+     name="airbag"
+     policy="static"/>
+   <reference
+     bind="setGps"
+     cardinality="1..1"
+     interface="edu.tutor.toast.device.gps.Gps"
+     name="gps"
+     policy="static"/>
+</scr:component>

@@ -4,7 +4,7 @@ Bundle-Name: Toast Emergency Monitor
 Bundle-SymbolicName: edu.tutor.toast.monitor.emergency
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
-Bundle-Activator: edu.tutor.toast.monitor.emergency.bundle.Activator
 Import-Package: edu.tutor.toast.device.airbag,
  edu.tutor.toast.device.gps,
  org.osgi.framework;version="1.8.0"
+Service-Component: OSGI-INF/component.xml
