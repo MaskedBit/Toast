@@ -1,59 +1,35 @@
 package edu.tutor.toast.device.gps;
 
-public class Gps
-{
-
-	/**
-	 * Default constructor.
-	 */
-	public Gps()
-	{
-		;
-	}
+public interface Gps {
 
 	/**
 	 * Heading in degrees from magnetic north.
 	 * @return
 	 */
-	public int getHeading()
-	{
-		return (90);
-	}
+	public abstract int getHeading();
 
 	/**
 	 * Latitude:  positive is North, negative is South.
 	 * @return
 	 */
-	public double getLatitude()
-	{
-		return (37.76999);
-	}
+	public abstract double getLatitude();
 
 	/**
 	 * Longitude: positive is East, negative is West.
 	 * @return
 	 */
-	public double getLongitude()
-	{
-		return (-122.44694);
-	}
+	public abstract double getLongitude();
 
 	/**
 	 * Altitude in meters.
 	 * @return
 	 */
-	public double getAltitude()
-	{
-		return (2286);
-	}
+	public abstract double getAltitude();
 
 	/**
 	 * Speed in meters per second.
 	 * @return
 	 */
-	public double getSpeed()
-	{
-		return (53.6448);
-	}
+	public abstract double getSpeed();
 
 }

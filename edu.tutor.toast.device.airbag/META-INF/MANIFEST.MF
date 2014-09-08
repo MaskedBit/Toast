@@ -5,3 +5,5 @@ Bundle-SymbolicName: edu.tutor.toast.device.airbag
 Bundle-Version: 1.0.0
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Export-Package: edu.tutor.toast.device.airbag
+Bundle-Activator: edu.tutor.toast.device.airbag.fake.bundle.Activator
+Import-Package: org.osgi.framework;version="1.8.0"

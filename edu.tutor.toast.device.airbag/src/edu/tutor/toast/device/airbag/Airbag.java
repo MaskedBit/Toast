@@ -1,36 +1,8 @@
 package edu.tutor.toast.device.airbag;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class Airbag
+public interface Airbag
 {
-	private List<AirbagListener> listeners;
-	
-	/**
-	 * Default constructor.
-	 */
-	public Airbag()
-	{
-		listeners = new ArrayList<AirbagListener>();
-	}
-	
-	public synchronized void addListener(AirbagListener listener)
-	{
-		listeners.add(listener);
-	}
+	public void addListener(AirbagListener listener);
 
-	public synchronized void removeListener(AirbagListener listener)
-	{
-		listeners.remove(listener);
-	}
-
-	public synchronized void deploy()
-	{
-		for (AirbagListener curListener : listeners)
-		{
-			curListener.deployed();
-		}
-	}
-
+	public  void removeListener(AirbagListener listener);
 }
